@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:"ngB";
+	src:url(../NanumGothicBold.eot);
+src:local(※), url(../NanumGothicBold.woff) format(‘woff’);
+	}
+	
+@font-face{
+	font-family:"ng";
+	src:url(../NanumGothic.eot);
+src:local(※), url(../NanumGothic.woff) format(‘woff’);
+	}
+	
+* {margin:0; padding:0;}
+.myInfo{
+	/*float:left;
+	width:200%;*/
+}
+.me{
+	/*float:left;
+	width:50%;*/
+}
+header {
+	display:block;
+	text-align:center;
+	font-family:ngb;	
+	margin:10px 0 0 0;
+}
+
+h1{
+	margin:0 0 10px 0;
+	font-size:1.6em;	
+}
+
+h4{
+	margin:0 0 30px 0;
+	font-size:0.8em;	
+}
+
+.header_point{
+	display:inline;
+	color:#FF0000;	
+}
+
+textarea{
+display:blcok;
+left:auto;
+height:200px;
+width:500px;
+}
+
+
+.content{
+	display:block;
+	margin:0 auto;
+	text-align:center;	
+	font-family:ng;
+	font-size:0.8em;
+}
+
+
+form input[id|="mentor"]{
+	font-size:14px;
+	font-family:나눔고딕,NanumGothic,ng;
+	width:100px; height:38px;
+	background-color:#ea203e;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+	margin:0 10px 0 10px;
+}
+
+
+form input[id|="mentee"]{
+	font-size:14px;
+	font-family:나눔고딕,NanumGothic,ng;
+	width:100px; height:38px;
+	background-color:#1b80fe;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+form input[id|="business"]{
+	font-size:30px;
+	font-family:나눔고딕,NanumGothic,ng;
+	width:200px; height:60px;
+	background-color:#ff2929;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+form input[id|="postgraduate"]{
+	font-size:30px;
+	font-family:나눔고딕,NanumGothic,ng;
+	width:200px; height:60px;
+	background-color:#038400;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+form input[id|="ceo"]{
+	font-size:30px;
+	font-family:나눔고딕,NanumGothic,ng;
+	width:200px; height:60px;
+	background-color:#ff7800;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+
+.select_mentor{
+	display:block;
+	text-align:center;	
+}

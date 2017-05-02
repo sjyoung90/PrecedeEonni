@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/join.css" />
+    <title>언니 직업 선택</title>
+    <script type="text/javascript">
+        var business = function () {
+           location.href = "join_mentor_worker.html";
+        }
+
+        var postgraduate = function () {
+			 location.href = "join_mentor_postgraduate.html";
+        }
+		
+		 var ceo = function () {
+			 location.href = "join_mentor_business.html";
+        }
+    </script>
+</head>
+<body>
+    
+  			 <header><h1>직종 선택</h1></header><br><br>
+            <div class="select_mentor">
+         <form action=" " method="post" name="mentor_job">
+         	  <input type="button" id="business" value="직장인" onclick="javascript:location.href='join_mentor_worker.html';"/><br><br>
+                <input type="button" id="postgraduate" value="대학원생" onclick="javascript:location.href='join_mentor_postgraduate.html';"/><br><br>
+                <input type="button" id="ceo" value="창업" onclick="javascript:location.href='join_mentor_business.html';"/>
+         </form>
+         </div>
+
+</body>
+</html>

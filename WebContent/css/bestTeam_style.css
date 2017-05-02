@@ -1,0 +1,206 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+	* {margin:0; padding:0;}
+	
+	@font-face{
+	font-family:"ngB";
+	src:url(../font/NanumGothicBold.eot);
+src:local(※), url(../font/NanumGothicBold.woff) format(‘woff’);
+	}
+	
+	@font-face{
+	font-family:"ng";
+	src:url(../font/NanumGothic.eot);
+src:local(※), url(../font/NanumGothic.woff) format(‘woff’);
+	}
+
+	
+	.slide{
+	overflow:hidden;
+	width:500%;
+	height:80%;	
+	position:absolute;
+	vertical-align:bottom;
+	}
+		.main_epilogue{
+	width:20%;
+	height:100%;
+	padding:0px;
+	top:0px;
+	left:10%
+	margin:0px -4px 0px 0px;
+	outline-offset:0;
+	
+	}
+	
+		.epilogue_table_new{
+		display:block;
+		width:100%;
+		height:100%;
+		left:10%;
+		margin:0 0 0 10%;
+		padding:0 30% 0 0;
+		
+		border-spacing:5px;
+		
+	}
+
+	
+	
+	.epilogue_table_new td{
+		padding:0 1px 0 1px;	
+	}/*상우하좌*/
+	
+
+	
+	
+	.epilogue_content_new{
+		display:block;
+		width:130%;
+		height:300px;
+		font-family:ng;
+		border-spacing:0;
+		cursor:pointer;
+		box-shadow:4px 4px 4px RGBA(0,0,0,0.5);
+	}
+	
+	.epilogue_content1_new{
+		display:block;
+		width:80%;
+		height:300px;
+		margin:0 0 0 35%;
+
+		
+	}
+		
+		.epilogue_content11{
+		display:block;
+		width:100%;
+		height:150px;
+				font-family:ng;
+			border-spacing:0;
+		cursor:pointer;
+		box-shadow:4px 4px 4px RGBA(0,0,0,0.5);
+		
+
+		}
+		
+	.epilogue_month11{
+		background-color:#CCCCCC;
+		padding:0;
+		font-weight:100;
+		cursor:pointer;
+		
+	}
+	
+			.epilogue_content10{
+		display:block;
+		width:100%;
+		height:150px;
+		margin:0 0 0 1%;		
+		font-family:ng;
+		border-spacing:0;
+		cursor:pointer;
+		box-shadow:4px 4px 4px RGBA(0,0,0,0.5);
+		}
+		
+	.epilogue_month10{
+		background-color:#CCCCCC;
+		padding:0;
+		font-weight:100;
+		cursor:pointer;
+		
+	}
+	
+	.epilogue_content09{
+		display:block;
+		width:100%;
+		height:150px;
+				font-family:ng;
+			border-spacing:0;
+		cursor:pointer;
+		box-shadow:4px 4px 4px RGBA(0,0,0,0.5);
+		}
+		
+	.epilogue_month09{
+
+		background-color:#CCCCCC;
+		padding:0;
+		font-weight:100;
+		cursor:pointer;
+		
+	}
+	
+			.epilogue_content08{
+		display:block;
+		width:100%;
+		height:150px;
+				margin:0 0 0 1%;
+				
+		font-family:ng;
+		border-spacing:0;
+		cursor:pointer;
+		box-shadow:4px 4px 4px RGBA(0,0,0,0.5);
+		}
+		
+	.epilogue_month08{
+
+		background-color:#CCCCCC;
+		padding:0;
+		font-weight:100;
+		cursor:pointer;
+		
+	}
+	
+	.main_text{
+		height:15%;
+		color:#FFFFFF;
+		padding:0;
+		font-weight:100;	
+		font-size:30px;
+                                                                                                                                              
+	}
+	
+		
+	.main_text0{
+		height:15%;
+		color:#FFFFFF;
+		padding:0;
+		font-weight:100;	
+		font-size:20px;
+                                                                                                                                              
+	}
+	.epilogue_this_month_new{
+		background-color:#FF6699;
+	
+
+		padding:0;
+		font-weight:100;
+		cursor:pointer;
+		
+	}
+	
+	.epilogue_element_new{
+		height:50%;
+		background-color:#FFFFFF;
+		padding:0;
+		vertical-align:top;
+	}
+	
+
+	
+	.best{
+		background:url(bestteam123.PNG);
+		width:100%;
+		hieght:100%;
+	
+	}
+	
+	.01{
+		margin:0;
+		width:100%;
+		height:100%;
+	}
+	

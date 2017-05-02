@@ -1,0 +1,367 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="css/project_style.css" />
+<link rel="stylesheet" type="text/css" href="css/bestTeam_style.css" />
+<link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css">
+<script src="js/jquery-1.8.1.js"></script>
+<script src="js/fancybox/source/jquery.fancybox.js"></script>
+<script src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script>
+$(document).ready(function() {
+		var img_index=0;
+		var imgSize =$('.main_epilogue').css('width');
+		$('.main_epilogue').each(function(index){
+			$(this).attr('data-index',index);
+		});
+
+		$('.slide_imgButton').each(function(index) {
+            $(this).attr('data-index',index);
+        }).click(function(){
+			var index = $(this).attr('data-index');
+			
+			moveSliderByImg(index,imgSize);
+		});
+		
+		$('.leftButton').click(function(){
+			
+			
+			if(img_index=='3') {moveSliderByImg(-1,imgSize);}
+			img_index=parseInt(img_index)+1;
+			
+			var offset = $(".slide").offset();
+			offset.left="-=100%";
+			$('.slide').animate({left:"-=100%"},"slow");
+			$(".slide").offset(offset);
+			
+		});
+		
+		$('.rightButton').click(function(){
+			
+			if(img_index=='0') {moveSliderByImg(4,imgSize);}
+			img_index=parseInt(img_index)-1;
+			
+			var offset = $(".slide").offset();
+			offset.left="+=100%";
+			$('.slide').animate({left:"+=100%"},"slow");
+			
+			$(".slide").offset(offset);
+		});
+		
+		function moveSliderByImg(index,imgSize){
+			var willMoveLeft = -(parseInt(index) * parseInt(imgSize));
+			$('.slide').animate({left:willMoveLeft},"slow");
+			img_index = index;
+		}
+		
+		$('a[rel=fancybox]').fancybox({
+			maxWidth	: 600,
+			maxHeight	: 600,
+			fitToView	: false,
+			width		: '70%',
+			height		: '70%',
+			autoSize	: false,
+			closeClick	: false,
+			openEffect	: 'none',
+			closeEffect	: 'none'
+		});
+		$('a[rel=fancybox]').css('color','#FFF');
+
+		        $(document).ready(function () {
+
+            $('.ranking_content').hover(
+                function () {
+                    $(this).css("border-color", "red");
+                    $(this).css("border-style", "solid");
+                }, function () {
+                    $(this).css("border-color", "white");
+                });
+            });
+
+		
+	$("#imgSrc1").bind("click", function(){
+ $("#imgSrc").attr("src", "image/mentoring01.png");
+
+
+});
+
+$("#imgSrc2").bind("click", function(){
+ $("#imgSrc").attr("src", "image/mentoring02.png");
+
+
+});
+
+
+$("#imgSrc3").bind("click", function(){
+ $("#imgSrc").attr("src", "image/mentoring03.png");
+
+
+});
+
+
+$("#imgSrc4").bind("click", function(){
+ $("#imgSrc").attr("src", "image/mentoring04.png");
+
+
+});
+
+	
+		
+  });
+</script>
+<style>
+	body {overflow:hidden}
+</style>
+</head>
+
+<body>
+<div class="slide">
+		<div class="main_epilogue">
+			<img class="notice_content" src="image/notice_content.png" />
+		</div>
+		                 <div class="main_epilogue">
+                 	<table class="epilogue_table_new">
+                   	 <tr>
+                    	<td>
+                        	<table class="epilogue_content_new">
+                            	<tr class="epilogue_this_month_new">
+                                	<th class="main_text0">이달의 Best 팀</th>
+                                                 
+                                </tr>
+                                <tr class="epilogue_element_new">
+                                    <td class="largeimg">
+                					 <img id="imgSrc" src="image/mentoring01.png">
+                                    </td>
+                                </tr>
+                        	</table>
+                        </td>
+                        <td>
+                        	<table class="epilogue_content1_new">
+                            	<tr>
+                             <td>
+                        	<table class="epilogue_content11">
+                            	<tr class="epilogue_month11">
+                                	<th class="main_text">11월</th>
+                                    </tr>
+                                    <tr>
+                                    <td class="thumnail">
+                     					<img id="imgSrc1" src="image/mentoring01.png">
+                                        
+                                    </td>
+                                </tr>
+                          
+                        	</table>
+                        </td>
+                         <td>
+                        	<table class="epilogue_content10">
+                            	<tr class="epilogue_month10">
+                                	<th class="main_text">10월</th>
+                                 </tr>  <tr>  <td class="thumnail">
+                                     
+                                     	<img  id="imgSrc2" src="image/mentoring02.png">
+                                    </td>
+                                </tr>
+                              
+                        	</table>
+                        	</td>
+                            
+                            </tr>
+                            <tr>
+                             <td>
+                        	<table class="epilogue_content09">
+                            	<tr class="epilogue_month09">
+                                	<th class="main_text">9월</th>
+                                    </tr>
+                                    <tr>
+                                  <td id="thumnail">
+                                   		<img id="imgSrc3"  src="image/mentoring03.png">
+                                    </td>
+                                </tr>
+                       
+                        	</table>
+                        </td>
+                         <td>
+                        	<table class="epilogue_content08">
+                            	<tr class="epilogue_month08">
+                                	<th class="main_text">8월</th></tr>
+                                    <tr>
+                                     <td id="thumnail">
+                                     	<img   id="imgSrc4" src="image/mentoring04.png">
+                                    </td>
+                                </tr>
+                              
+                        	</table>
+                        	</td>
+                                    </td>
+                                </tr>
+                         
+                        	</table>
+                        	</td>
+                            
+                            </tr>
+                        	</table>
+                        </td>
+                       
+                     </tr>
+           
+           
+                    
+                    </table>
+                 </div>
+
+                 
+		<div class="main_epilogue">
+		   <div class="newsister">
+			<!-- Image Caption 1 -->
+			<div class="box">
+				<img id="image-1" src="image/nae.jpg">
+				<span class="caption slide-caption">
+					<h3>내윤하 언니</h3>
+					<p>삼성SDS에 다녀여<br>
+					내대리입니다.시스템통합,구축,운영 및 유지보수등의 업무를하죠</p>
+				</span>
+			</div>	
+			<!-- Image Caption 2 -->
+			<div id="box-2" class="box">
+				<img id="image-2" src="image/hye.jpg">
+				<span class="caption slide-caption">
+					<h3>김혜민 언니</h3>
+					<p>NHN에 다녀여<br>
+					김차장입니다.네이버캘린더 제가 만들었어여</p>
+				</span>
+			</div>
+			<!-- Image Caption 3 -->
+			<div id="box-3" class="box">
+				<img id="image-3" src="image/ji.jpg">
+				<span class="caption slide-caption">
+					<h3>김지민 언니</h3>
+					<p>LG CNS에 다녀여<br>
+					김과장입니다.과장이라 할게많습니다.주로 SCM 관련 프로젝트를 담당하고있어여</p>
+				</span>
+			</div>
+			<!-- Image Caption 4 -->
+			<div id="box-4" class="box">
+				<img id="image-4" src="image/dan.jpg">
+				<span class="caption slide-caption">
+					<h3>박단비 언니</h3>
+					<p>KT에 다녀여<br>
+					신입사원이에요.정보보안과관련된 IT를 설계합니다.</p>
+				</span>
+			</div>
+			<!-- Image Caption 5 -->
+			<div id="box-5" class="box">
+				<div class="rotate">
+				<img id="image-5" src="image/ju.jpg">
+				<span class="caption slide-caption">
+					<h3>손주영 언니</h3>
+					<p>현대오토에버에 다녀여<br>
+					신입사원입니다.그룹 내 정보시스템 운영과 개발, 네트워크, IDC 운영 등의 사업을 운영합니다 </p>
+				</span>
+				</div>
+			</div>
+			<!-- Image Caption 6 -->
+			<div id="box-6" class="box">
+				<img id="image-6" src="image/da.jpg">
+				<span class="caption slide-caption">
+					<h3>정다운 언니</h3>
+					<p>두산에 다녀여<br>
+					대리입니다. 그룹 내 정보시스템 운영과 개발, 네트워크, IDC 운영 등의 사업을 운영합니다</p>
+				</span>
+			</div>
+		  </div>
+		</div>
+		<!--후기게시판-->
+		<div class="main_epilogue">
+			<div class="review_header">이달의 베스트 후기</div>
+                 	<div class="review">                   		
+				<div class="review_writer">
+					<table><tr><td><img></td><td>김지민</td></tr></table>
+				</div>
+                    		<div class="review_content">
+					정말 취업에 도움이 많이 되었어요. 감사해요 혜민언니!!
+				</div>
+			</div>
+                 </div>
+		<div class="main_epilogue">
+                 	<table class="ranking_table">
+                          <tr>
+                              <td>
+                                  <table class="ranking_content">
+                                      
+                                      <tr class="ranking_photo2">
+                                          <td><img src="image/second.png" class="ranking_photo"></td>
+                                      </tr>
+                                      <tr class="ranking_name">
+                                          <td>내윤하</td>
+                                      </tr>
+                                      <tr class="ranking_second">
+                                          <th><b>2</b></th>
+                                      </tr>
+
+                                  </table>
+
+                              </td>
+                        <td>
+                        	<table class="ranking_content">
+                            	
+                                <tr class="ranking_photo1">
+                                	<td><img src="image/first.png" class="ranking_photo"></td>
+                                </tr>
+                                <tr class="ranking_name">
+                                    <td>박단비</td>
+                                </tr>
+                                <tr class="ranking_first">
+                                	<th><b>1</b></th>
+                                </tr>
+                        	</table>
+                        </td>
+                        <td>
+                        	<table class="ranking_content">
+                            	
+                                <tr class="ranking_photo3">
+                                	<td><img src="image/third.png" class="ranking_photo"></td>
+                                </tr>
+                                <tr class="ranking_name">
+                                    <td>김지민</td>
+                                </tr>
+                                <tr class="ranking_third">
+                                	<th><b>3</b></th>
+                                </tr>
+                        	</table>
+                        </td>
+                     </tr>
+                         </table>
+                     </div>              
+
+</div>
+              <div class="leftButton">
+            	  <
+              </div>
+              <div class="rightButton">
+              		>
+              </div>
+              <div class="slide_imgButton_pannel">
+             	<div class="slide_imgButton" id="img1">
+                <img src="image/notice_new.png">
+                </div> 
+                <div class="slide_imgButton" id="img2">
+               	<img src="image/bestteam.png">
+                </div> 
+                <div class="slide_imgButton" id="img3">
+                <img src="image/newface.png">
+                </div> 
+                <div class="slide_imgButton" id="img4">
+                <img src="image/review.png">
+                </div> 
+                <div class="slide_imgButton" id="img5">
+                <img src="image/ranking.png">
+                </div> 
+              </div>
+              
+              
+              
+        
+</body>
+</html>

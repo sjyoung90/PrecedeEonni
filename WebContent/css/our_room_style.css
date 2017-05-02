@@ -1,0 +1,128 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:"ngB";
+	src:url(../font/NanumGothicBold.eot);
+src:local(※), url(../font/NanumGothicBold.woff) format(‘woff’);
+	}
+	
+	@font-face{
+	font-family:"ng";
+	src:url(../font/NanumGothic.eot);
+src:local(※), url(../font/NanumGothic.woff) format(‘woff’);
+	}
+	
+.search_box{
+	display:block;
+	position:absolute;
+	top:5px;
+	left:460px;
+}
+	
+.write_table{
+	display:block;
+	position:absolute;
+	top:140px;
+	left:30px;
+	border:1px #CCCCCC solid;
+	font-family:ng;
+	font-size:0.8em;
+	width:400px;
+	border-spacing:0px;
+	
+}
+
+
+
+.search_icon{
+	width:20px;	
+}
+
+.write_title{
+	width:400px;	
+}
+
+.write_file{
+	text-align:right;	
+}
+
+.write_file_title{
+	width:200px;	
+}
+
+.placeholder {color: #aaa;}
+
+textarea{resize:none; overflow:auto; height:auto; width:400px;}
+
+.submit_button{
+	background-color:#e6e6e6;
+	height:25px;
+	text-align:right;
+	padding:0 10px 0 0;
+}
+
+form input[type|="submit"]{
+	border:0px;
+	background-color:black;
+	color:#FFF;
+	width:50px;
+	height:22px;
+	font-family:ng;
+	font-size:0.9em;
+}
+
+.notice{
+		display:block;
+		position:absolute;
+		top:10px;
+		left:30px;
+		width:400px;
+		height:100px;
+		font-family:ng;
+		font-size:0.9em;
+		border-radius:10px;
+		background-color:#840000;
+		color:white;
+		padding:10px;
+}
+
+
+
+
+
+#masonry_container{
+	position:relative;
+	display:block;
+	margin:0 0 0 0;
+	top:0px;
+	left:450px;
+	width:900px;	
+	float:none;
+	height:500px;
+}
+
+.article{
+	margin:5px;
+	width:100px;	height:100px;
+	background-color:#cdcbcb;
+	border-radius:10px;
+	float:left;	
+}
+
+
+.normal{
+	width:210px;
+	height:210px;	
+	cursor:pointer;
+}
+
+.small{
+	width:100px;
+	height:100px;
+	cursor:pointer;	
+}
+
+#our_room_popup{
+	display:none;
+}

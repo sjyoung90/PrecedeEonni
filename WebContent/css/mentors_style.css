@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+	* {margin:0; padding:0;}
+	
+	@font-face{
+	font-family:"ngB";
+	src:url(NanumGothicBold.eot);
+src:local(※), url(NanumGothicBold.woff) format(‘woff’);
+	}
+	
+	@font-face{
+	font-family:"ng";
+	src:url(NanumGothic.eot);
+    src:local(※), url(NanumGothic.woff) format(‘woff’);
+	}
+	
+	.slide{
+		width:700px;
+		float:left;
+		overflow:hidden;
+	}
+	
+	
+	.main_epilogue{
+		display:block;
+		float:left;
+		height:500px;
+		margin:10px;
+	}
+	
+	
+	.imgSource{
+		width:200px;
+		height:300px;
+	}

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/join.css" />
+    <title>회원가입 첫페이지</title>
+
+    <script type="text/javascript">
+        var join_mentor = function () {
+            var agree = document.getElementById("agree")
+            if (agree.checked) {
+                    location.href = "join_mentor_job.html";
+            }
+            else {
+                alert("이용약관에 동의하셔야 합니다.");
+                return false;
+            }
+        }
+
+        var join_mentee = function () {
+            var agree = document.getElementById("agree")
+            if (agree.checked) {
+                location.href = "join_mentee.html";
+            }
+            else {
+                alert("이용약관에 동의하셔야 합니다.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action=" " method="post" name="agreement">
+        <header><h1>회원가입</h1> <h4>학부생 및 휴학생이면 <div class="header_point">동생</div>, 취업생 및 대학원생이면 <div class="header_point">언니</div>를 체크해주세요.</h4></header>
+       
+    <div class="content"> <textarea id="TextArea1" cols="80" rows="20">1. 이용약관
+
+제 1 조 (목적)
+ 이 약관은 "앞서가는 언니"에서 제공하는 성신여대 멘토링 홈페이지에서 제공하는 모든 서비스의 이용조건 및 절차, 이용자와 당 홈페이지의 권리와 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.
+
+2. 개인정보보호정책
+ 1. "앞서가는 언니"는 “정보통신망 이용촉진 및 정보보호에 관한 법률”을 준수하며, 수집된 회원의 개인정보를 보호하고자 노력합니다.
+ 2. "앞서가는 언니"는 개인정보취급방침을 통하여 개인정보의 수집․이용 목적, 수집․이용 항목, 보유․이용 기간을 이용자에게 알리고 동의를 받습니다. 개인정보취급방침의 개정 시 당 홈페이지에 게시 또는 이메일 및 유선을 통해 공지하며,단, 경제적․기술적인 사유로 동의를 받는 것이 뚜렷하게 곤란한 경우, 정보통신서비스의 제공에 따른 요금정산을 위하여 필요한 경우, 다른 법률에 특별한 규정이 있는 경우는 제합니다.</textarea>
+        <br /><br />
+        <input type="checkbox" id="agree"/> 동의합니다.
+        <br /><br />
+        <input type="button" id="mentor" value="언니로 가입" onclick="join_mentor();"/>
+        <input type="button" id="mentee" value="동생으로 가입" onclick="join_mentee();"/>
+    </form></div>
+</body>
+</html>

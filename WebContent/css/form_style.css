@@ -1,0 +1,126 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:"ngB";
+	src:url(../NanumGothicBold.eot);
+src:local(※), url(../NanumGothicBold.woff) format(‘woff’);
+	}
+	
+@font-face{
+	font-family:"ng";
+	src:url(../NanumGothic.eot);
+src:local(※), url(../NanumGothic.woff) format(‘woff’);
+	}
+	
+.form{
+display:block;
+margin:0 auto;
+font-family:ng;
+}
+
+table{
+	font-family:ngb;
+	font-weight:500;
+	text-align:left;
+	font-size:0.8em;
+}
+
+select{
+	font-size:14px;
+	font-family:ng;
+}
+
+.slide{
+	width:200%;
+	overflow:hidden;
+	
+}
+
+.form{
+	width:50%;
+	float:left;
+}
+
+.favorite{
+	display:inline; 
+	float:left;
+}
+
+.mentorImage{
+	width:200px;
+	height:200px;	
+}
+
+form input[type|="submit"]{
+	font-size:14px;
+	font-family:나눔고딕,NanumGothic,ng;
+	width:100px; height:38px;
+	background-color:#ea203e;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+	margin:0 10px 0 10px;
+}
+
+form input[id|="assign"]{
+	font-size:14px;
+	font-family:나눔고딕,NanumGothic,ng;
+	width:100px; height:38px;
+	background-color:#ea203e;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+	margin:0 10px 0 10px;
+}
+
+
+form input[id|="back"]{
+	font-size:14px;
+	font-family:나눔고딕,NanumGothic,ng;
+	width:100px; height:38px;
+	background-color:#999;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+	margin:0 10px 0 10px;
+}
+
+form input[type|="reset"]{
+	font-size:14px;
+	font-family:나눔고딕,NanumGothic,ng;
+	width:100px; height:38px;
+	background-color:#999;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+	margin:0 10px 0 10px;
+}
+
+
+th{
+background-color:#dadada;	
+text-align:left;
+}
+
+
+.current{
+	background-color:#ea203e;
+	padding:0;
+	margin:0;
+	color:#FFFFFF;	
+}
+
+.rightButton{
+	position:absolute;
+	top:40%;
+	left:90%;
+	
+}
+
+.leftButton{
+	position:absolute;
+	top:40%;
+	left:5%;
+	
+}
